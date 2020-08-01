@@ -1,11 +1,13 @@
 <template>
   <div class="home">
     <section id="game">
+      <div class="container">
       <b-row class="justify-content-md-center">
         <b-col md="auto">
           <Game />
         </b-col>
       </b-row>  
+      </div>
     </section>
     <section id="statistics">
         <div class="container">
