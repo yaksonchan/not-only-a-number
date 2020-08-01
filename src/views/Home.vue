@@ -47,6 +47,10 @@
             </b-row>
         </div>
     </section>
+    <section id="about">
+      <About />
+    </section>
+    
 
   </div>
 </template>
@@ -54,10 +58,13 @@
 <script>
 // @ is an alias to /src
 import Game from '../components/Game';
+import About from '../components/About';
+
 export default {
   name: 'Home',
   components: {
-    Game
+    Game,
+    About
   }
 }
 </script>

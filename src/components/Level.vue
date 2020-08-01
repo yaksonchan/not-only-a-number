@@ -24,11 +24,9 @@
               name="radio-btn-stacked"
             ></b-form-radio-group>
           </b-form-group>
-          Você selecionou: {{selected}}
-        Parabéns, está qualificado para o próximo nível.
+          <b-button href="#" variant="primary" @click="check()">Verificar</b-button>
       </b-card-text>
-
-      <b-button href="#" variant="primary" @click="addLevel()">Próximo level</b-button>
+    <div v-if="isCorrect">Você acertou!</div>
     </b-card>
     </div>
   </div>
@@ -41,16 +39,21 @@ export default {
     return {
       level: 1,
       options: [
-        { text: 'Colocar a máscara e sair', value: '1' },
-        { text: 'Só sair', value: '2' },
-        { text: 'Ficar parado', value: '3'}
+        { text: 'Colocar a máscara e sair', value: 1 },
+        { text: 'Só sair', value: 2 },
+        { text: 'Ficar parado', value: 3}
         ],
-      selected: null
+      selected: null,
+      isCorrect: false
     }
   },
   methods: {
     addLevel(){
       this.level = this.level + 1;
+    },
+    check(){
+      if(this.selected == 1) this.isCorrect = true;
+      else this.isCorrect = false;
     }
   }
 }
