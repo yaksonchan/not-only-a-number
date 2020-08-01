@@ -10,42 +10,7 @@
       </div>
     </section>
     <section id="statistics">
-        <div class="container">
-            <b-row>
-                <b-col lg="12" class="text-center">
-                    <h2 class="section-heading text-light">Estatísticas</h2>
-                    <hr class="my-4">
-                </b-col>
-            </b-row>
-        </div>
-        <div class="container">
-            <b-row>
-                <b-col md="6" lg="3">
-                    <div class="mx-auto service-box mt-5">
-                        <h3 class="mb-3">Hospitalizados</h3>
-                        <h4>359.125 seres humanos</h4>
-                    </div>
-                </b-col>
-                <b-col md="6" lg="3">
-                    <div class="mx-auto service-box mt-5">
-                        <h3 class="mb-3">Recuperados</h3>
-                        <h4>855.175 pessoas</h4>
-                    </div>
-                </b-col>
-                <b-col md="6" lg="3">
-                    <div class="mx-auto service-box mt-5">
-                        <h3 class="mb-3">Contaminados</h3>
-                        <h4>82.358 vidas</h4>
-                    </div>
-                </b-col>
-                <b-col md="6" lg="3">
-                    <div class="mx-auto service-box mt-5">
-                        <h3 class="mb-3">Mortos</h3>
-                        <h4>58.455 amores</h4>
-                    </div>
-                </b-col>
-            </b-row>
-        </div>
+        <Statistics />
     </section>
     <section id="about">
       <About />
@@ -59,12 +24,15 @@
 // @ is an alias to /src
 import Game from '../components/Game';
 import About from '../components/About';
+import Statistics from '../components/Statistics';
+
 
 export default {
   name: 'Home',
   components: {
     Game,
-    About
+    About,
+    Statistics
   }
 }
 </script>
