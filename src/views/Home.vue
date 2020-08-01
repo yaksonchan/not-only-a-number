@@ -7,7 +7,7 @@
         </b-col>
       </b-row>  
     </section>
-    <section id="statistics" class="bg-primary">
+    <section id="statistics">
         <div class="container">
             <b-row>
                 <b-col lg="12" class="text-center">
@@ -62,6 +62,16 @@ export default {
 
 <style>
 section {
-  padding: 8rem 0;
+  padding: 4rem 0;
+}
+
+#statistics {
+  background-color: #44DB92;
+}
+
+#game{
+    background: url(http://obviousmag.org/agucadas_percepcoes/assets_c/2016/03/6.0-thumb-800x500-143748.jpg) #44DB92;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 </style>

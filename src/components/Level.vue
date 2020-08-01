@@ -7,8 +7,7 @@
       img-alt="Image"
       img-top
       tag="article"
-      style="max-width: 20rem;"
-      class="mb-2"
+      class="mb-2 levelContent"
     >
       <b-card-text>
         <p>
@@ -58,5 +57,9 @@ export default {
 </script>
 
 <style scoped>
+
+.levelContent {
+  width: 500px;
+}
 
 </style>
