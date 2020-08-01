@@ -1,13 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <Game />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import Game from '../components/Game';
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Game
+  }
 }
 </script>
+
+<style>
+.home {
+  display: flex;
+  justify-content: center;
+}
+</style>

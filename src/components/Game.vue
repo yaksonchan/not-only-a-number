@@ -1,13 +1,18 @@
 <template>
-  <div class="menu">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="Game">
+      <h1>Not Only a Number</h1>
+      <Level />
   </div>
 </template>
 
 <script>
+import Level from './Level';
+
 export default {
-  name: 'Menu'
+  name: 'Game',
+  components: {
+    Level
+  }
 }
 </script>
 
