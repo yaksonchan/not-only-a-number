@@ -35,10 +35,7 @@ export default {
   },
   methods: {
     playAgain(){
-      this.$parent.started = true;
-      this.$parent.setRandomContext();
-      this.$parent.prepareFirstQuestion();
-      this.$parent.finished = false;
+      this.$parent.playAgain();
     }
   }
 }

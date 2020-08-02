@@ -3,9 +3,10 @@
     <div>
       <b-card
       :title="'Fase Atual ' + question.sequence"
-      img-src="https://picsum.photos/600/300/?image=25"
+      :img-src="require('@/assets/' + question.img)"
       img-alt="Image"
       img-top
+      img-height="200"
       tag="article"
       class="mb-2 questionContent"
     >
@@ -18,7 +19,7 @@
             <b-col cols="12" md="auto">
               <b-form-group>
                 <b-row v-for="o in question.options" :key="o.id">
-                  <b-button class="option" squared :variant="o.style" @click="select(o)" :disabled="answered">{{o.text}}</b-button>
+                  <b-button class="option" :variant="o.style" @click="select(o)" :disabled="answered">{{o.text}}</b-button>
                 </b-row>
               </b-form-group>
             </b-col>
@@ -88,13 +89,24 @@ export default {
 
 <style scoped>
 
+img {
+  border-radius: 16px 16px 0 0;
+}
+
 .questionContent {
-  width: 500px;
+  max-width: 30rem;
+  background-color: rgba(177, 171, 171, 0.9);
+  border-radius: 16px;
+}
+
+.container {
+  align-content: center;
 }
 
 .option {
   width: 250px;
   margin-top: 5px;
+  border-radius: 16px;
 }
 
 </style>

@@ -13,7 +13,7 @@
             <b-row>
                 <b-col md="6" lg="3">
                     <div class="mx-auto service-box mt-5">
-                        <h3 class="mb-3">Confirmados</h3>
+                        <h3 class="mb-3 rise-a-bit">Confirmados</h3>
                         <h4>{{result.confirmed}} seres humanos</h4>
                     </div>
                 </b-col>
@@ -65,6 +65,10 @@ export default {
 <style>
     h2.section-heading {
         font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .rise-a-bit {
+        margin-top: -15px;
     }
 
     .material-icons {
