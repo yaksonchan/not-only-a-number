@@ -3,9 +3,10 @@
     <div>
       <b-card
       :title="'Fase Atual ' + question.sequence"
-      img-src="https://picsum.photos/600/300/?image=25"
+      :img-src="require('@/assets/' + question.img)"
       img-alt="Image"
       img-top
+      img-height="200"
       tag="article"
       class="mb-2 questionContent"
     >
