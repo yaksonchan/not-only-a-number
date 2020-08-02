@@ -1,7 +1,14 @@
 <template>
   <div class="about">
-    <h1>Sobre <i class="material-icons" style="color: #6d2c2c;">people</i></h1>
-    <p>A gente é muito legal e merece ser rico.</p>
+    <div class="container">
+            <b-row>
+                <b-col lg="12" class="text-center">
+                    <h2 class="section-heading">Sobre <i class="material-icons people">people</i></h2>
+                    <hr class="my-4">
+                </b-col>
+            </b-row>
+        </div>
+    <p>O <span>N</span>ot <span>O</span>nly <span>a</span> <span>N</span>umber é um quiz com intuito de conscientizar o usuário. As perguntas simulam pertinentes situações comuns do dia a dia, ocorrendo na pele de nosso personagem <span>Noan</span>. Responda cada pergunta subsequente e aumente de nível a cada acerto. Em caso de erro, será explicado a conduta certa para o usuário com finalidade educativa. No rodapé da página, são exibidas as estatísticas atualizadas da contaminação por COVID-19. Ao fim, seus resultados serão comparados com os de outros usuários.</p>
   </div>
 </template>
 
@@ -13,4 +20,32 @@ export default {
 
 <style>
 
+#about {
+  background-color: #4C4C7C;
+}
+
+h2.section-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #44DB92;
+}
+
+h2 .people {
+  color: white;
+  font-size: 25px;
+}
+
+.about p {
+  padding: 20px 200px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22pt;
+  text-align: justify;
+}
+
+.about p > span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22pt;
+  color: black;
+  text-align: justify;
+}
 </style>

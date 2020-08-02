@@ -45,12 +45,13 @@ ul {
 }
 
 .navbar {
-    background-color: #03D470;
+    background-color: #44DB92;
     color: white;
 }
 
 .navbar a{
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .navbar a:hover{

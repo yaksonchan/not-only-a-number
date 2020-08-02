@@ -47,8 +47,10 @@ section {
 }
 
 #game{
-    background: url(http://obviousmag.org/agucadas_percepcoes/assets_c/2016/03/6.0-thumb-800x500-143748.jpg) #44DB92;
+    background: url("../assets/background.jpg") #84a79c;
     background-size: cover;
+    background-repeat: no-repeat;
+    
     background-blend-mode: multiply;
 }
 </style>

@@ -28,6 +28,12 @@ export default {
 
 .title {
   color: white;
+  text-shadow: 1px 1px #4C4C7C;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 </style>
