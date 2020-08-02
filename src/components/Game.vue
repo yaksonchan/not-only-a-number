@@ -86,7 +86,7 @@ a:hover {
 }
 
 .title:hover {
-  color: #4C4C7C;
+  text-shadow: 1px 1px 5px #44DB92;
 }
 
 h1 {
