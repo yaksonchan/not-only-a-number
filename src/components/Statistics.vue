@@ -4,7 +4,7 @@
           <div style="position: absolute;">
             <marquee scrollamount="6">
                 <div style="margin-left:-500px">
-                {{names.sort(() => Math.random() - 0.5).join('    ')}}
+                {{namesFirst.join('    ')}}
                 </div>
             </marquee>
           </div>
@@ -58,7 +58,7 @@
           <div style="position: absolute; margin-top:50px">
             <marquee scrollamount="6">
                 <div style="margin-left:-500px">
-                {{names.sort(() => Math.random() - 0.5).join('    ')}}
+                {{namesSecond.join('    ')}}
                 </div>
             </marquee>
           </div>
@@ -73,7 +73,7 @@ export default {
   data(){
       return {
           result: null,
-          names: [
+          namesFirst: [
               "João Carlos Fachinello", "Rosa Campagnolo Vaccaro", "Marcelo Rubens Gonçalves", 
               "Sebastião Bueno da Silva", "Maurício Borges Marques", "Gerônimo Batista Pires", 
               "Maria Marilene Rufino Lima", "Patrícia Beatriz Albuquerque", "Raul Lima Bastos", 
@@ -81,6 +81,15 @@ export default {
               "Francisco Lau", "Edson da Silva Cavalcante", "Danilo Moura", "Danilo Moura", "Leni Peroto Pereira", 
               "Angela von Nowakonski", "Elenilson Rodrigues de Souza", "Sandra Maria da Silva", "Elisa Inês da Silva",
                "Manoel Batista Chaves Filho", "Daniele Cristina da Silva Flor", "Ivanir Clementino de Brito"
+          ],
+          namesSecond: [
+              "Francisco Lau", "Edson da Silva Cavalcante", "Danilo Moura", "Danilo Moura", "Leni Peroto Pereira", 
+              "Angela von Nowakonski", "Elenilson Rodrigues de Souza", "Sandra Maria da Silva", "Elisa Inês da Silva",
+               "Manoel Batista Chaves Filho", "Daniele Cristina da Silva Flor", "Ivanir Clementino de Brito",
+               "João Carlos Fachinello", "Rosa Campagnolo Vaccaro", "Marcelo Rubens Gonçalves", 
+              "Sebastião Bueno da Silva", "Maurício Borges Marques", "Gerônimo Batista Pires", 
+              "Maria Marilene Rufino Lima", "Patrícia Beatriz Albuquerque", "Raul Lima Bastos", 
+              "Leandro José da Silva", "Paulo Márcio Leite", "Flávio Fialho", "Orlando Tavares Pinheiro"
           ]
       }
   },
