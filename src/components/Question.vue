@@ -17,7 +17,7 @@
           <b-row class="d-flex justify-content-md-center">
             <b-col cols="12" md="auto">
               <b-form-group>
-                <b-row v-for="o in question.options" :key="o.id">
+                <b-row align-h="center" v-for="o in question.options" :key="o.id">
                   <b-button class="option" :variant="o.style" @click="select(o)" :disabled="answered">{{o.text}}</b-button>
                 </b-row>
               </b-form-group>
@@ -27,7 +27,7 @@
       </b-card-text>
     <div v-if="answered">
       <div v-if="message">{{message}}</div>
-      <b-button class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
+      <b-button href="#" class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
     </div>
     
     </b-card>
@@ -68,6 +68,12 @@ export default {
       this.question.options = this.question.options.map(o => ({...o, style: 'outline-dark'}));
     },
     nextStep(){
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+
       this.$parent.nextQuestion();
     },
     redefineAttributes(){
@@ -100,6 +106,10 @@ img {
 
 .container {
   align-content: center;
+}
+
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .option {

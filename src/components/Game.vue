@@ -1,6 +1,6 @@
 <template>
   <div class="game">
-      <a href="/"><h1 class="title">Not Only a Number</h1></a>
+      <a href="/" id="top"><h1 class="title">Not Only a Number</h1></a>
       <Start v-if="!started" />
       <Question :question="currentQuestion" v-if="started && !finished" />
       <Finish :result="result" v-if="finished"/>
