@@ -8,7 +8,7 @@
                 </b-col>
             </b-row>
         </div>
-    <p>O <span>N</span>ot <span>O</span>nly <span>a</span> <span>N</span>umber é um quiz com intuito de conscientizar o usuário. As perguntas simulam pertinentes situações comuns do dia a dia, ocorrendo na pele de nosso personagem <span>Noan</span>. Responda cada pergunta subsequente e aumente de nível a cada acerto. Em caso de erro, será explicado a conduta certa para o usuário com finalidade educativa. No rodapé da página, são exibidas as estatísticas atualizadas da contaminação por COVID-19. Ao fim, seus resultados serão comparados com os de outros usuários.</p>
+    <p>O <span>N</span>ot <span>O</span>nly <span>a</span> <span>N</span>umber é um quiz com intuito de conscientizar o usuário. As perguntas simulam situações pertinentes e comuns do dia a dia, ocorrendo na pele de nosso personagem <span>Noan</span>. Responda cada pergunta subsequente e aumente de nível a cada acerto. Em caso de erro, será explicado a conduta certa para o usuário com finalidade educativa. No rodapé da página, são exibidas as estatísticas atualizadas da contaminação por COVID-19. Ao fim, seus resultados serão comparados com os de outros usuários.</p>
   </div>
 </template>
 
@@ -35,11 +35,15 @@ h2 .people {
 }
 
 .about p {
-  padding: 20px 200px;
+  margin: 0 70px;
+  padding: 30px 20px 0;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 22pt;
   text-align: justify;
+  /* @media (max-width: 20px;) {
+    padding: 0 20px 0;
+  } */
 }
 
 .about p > span {

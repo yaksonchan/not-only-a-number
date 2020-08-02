@@ -1,6 +1,6 @@
 <template>
   <div class="game">
-      <h1 class="title">Not Only a Number</h1>
+      <a href="/"><h1 class="title">Not Only a Number</h1></a>
       <Start v-if="!started" />
       <Question :question="currentQuestion" v-if="started && !finished" />
       <Finish :result="result" v-if="finished"/>
@@ -58,9 +58,19 @@ export default {
 
 <style scoped>
 
+a:hover {
+  text-decoration: none;
+}
+
 .title {
   color: white;
   text-shadow: 1px 1px #4C4C7C;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.title:hover {
+  color: #4C4C7C;
 }
 
 h1 {

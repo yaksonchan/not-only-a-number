@@ -12,7 +12,7 @@
             <b-row>
                 <b-col md="6" lg="3">
                     <div class="mx-auto service-box mt-5">
-                        <h3 class="mb-3">Hospitalizados</h3>
+                        <h3 class="mb-3 rise-a-bit">Hospitalizados</h3>
                         <h4>359.125 seres humanos</h4>
                     </div>
                 </b-col>
@@ -48,6 +48,10 @@ export default {
 <style>
     h2.section-heading {
         font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .rise-a-bit {
+        margin-top: -15px;
     }
 
     .material-icons {
