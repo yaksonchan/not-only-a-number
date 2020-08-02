@@ -29,7 +29,7 @@
       <div v-if="answered">
         <template>
           <div>
-            <b-alert variant="danger" show>
+            <b-alert class="alertContent" :variant="message ? 'danger' : 'success'" show>
               <p>Sua pontuação atual é: {{points}}</p>
               <br v-if="message">
               {{message}}
@@ -141,13 +141,12 @@ img {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.alert {
+.alertContent {
   font-family: 'Josefin Sans', sans-serif;
-  text-align: justify;
   font-size: 16pt;
 }
 
-.alert p {
+.alertContent p {
   color:#4C4C7C;
   margin-top: 8px;
   margin-bottom: 5px;
