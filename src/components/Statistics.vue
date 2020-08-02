@@ -25,7 +25,7 @@
                         <i data-aos="fade-down" data-aos-delay="50" class="material-icons icon confirmed" style="font-size:70px;">check_circle</i>
                         <h3 class="mb-3">Confirmados</h3>
                         <h4>{{result.confirmed}}</h4>
-                        <h4> seres humanos</h4>
+                        <h2> seres humanos</h2>
                     </div>
                 </b-col>
                 <b-col md="6" lg="3">
@@ -33,15 +33,15 @@
                         <i data-aos="fade-down" data-aos-delay="100" data-aos-anchor=".confirmed" class="material-icons icon recovered" style="font-size:70px;">healing</i>
                         <h3 class="mb-3">Recuperados</h3>
                         <h4>{{result.recovered}}</h4>
-                        <h4> pessoas</h4>
+                        <h2> pessoas</h2>
                     </div>
                 </b-col>
                 <b-col md="6" lg="3">
                     <div class="mx-auto service-box mt-5">
                         <i data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".recovered" class="material-icons icon actives" style="font-size:70px;">sick</i>
                         <h3 class="mb-3">Ativos</h3>
-                        <h4>{{result.cases}}</h4>
-                        <h4> vidas</h4>
+                        <h4>{{result.cases.toFixed()}}</h4>
+                        <h2> vidas</h2>
                     </div>
                 </b-col>
                 <b-col md="6" lg="3">
@@ -49,7 +49,7 @@
                         <i data-aos="fade-down" data-aos-delay="200" data-aos-anchor=".actives" class="material-icons icon deaths" style="font-size:70px;">sentiment_very_dissatisfied</i>
                         <h3 class="mb-3">Mortos</h3>
                         <h4>{{result.deaths}}</h4>
-                        <h4> amores</h4>
+                        <h2> amores</h2>
                     </div>
                 </b-col>
             </b-row>
