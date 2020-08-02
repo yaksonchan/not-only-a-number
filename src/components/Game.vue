@@ -2,7 +2,14 @@
   <div class="game">
       <a href="/"><h1 class="title">Not Only a Number</h1></a>
       <Start v-if="!started && !finished" />
-      <Question :question="currentQuestion" v-if="started && !finished" />
+      <transition
+        name="custom-classes-transition"
+        enter-active-class="animated fadeInLeft"
+        leave-active-class="animated fadeOutRight"
+        mode="out-in"
+      >
+        <Question :question="currentQuestion" v-if="started && !finished" :key="currentQuestion.sequence"/>
+      </transition>
       <Finish :result="result" v-if="finished"/>
   </div>
 </template>

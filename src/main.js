@@ -5,13 +5,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue';
 import 'es6-promise/auto';
-import Vuex from 'vuex';
 import './firebase';
 import { rtdbPlugin } from 'vuefire';
 import moment from 'moment';
 
 Vue.use(rtdbPlugin);
-Vue.use(Vuex);
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 

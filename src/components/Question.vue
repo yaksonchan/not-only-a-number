@@ -18,19 +18,19 @@
           <b-row class="d-flex justify-content-md-center">
             <b-col cols="12" md="auto">
               <b-form-group>
-                <b-row v-for="o in question.options" :key="o.id">
-                  <b-button class="option" :variant="o.style" @click="select(o)" :disabled="answered">{{o.text}}</b-button>
+                <b-row v-for="o in question.options" :key="o.id" align-h="center">
+                    <b-button class="option" :variant="o.style" @click="select(o)" :disabled="answered">{{o.text}}</b-button>
                 </b-row>
               </b-form-group>
             </b-col>
           </b-row>
         </div>
       </b-card-text>
-    <div v-if="answered">
-      <div v-if="message">{{message}}</div>
-      <b-button class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
-    </div>
-    
+      <div v-if="answered">
+        <div class="points">Sua pontuação atual é: {{points}}</div>
+        <div v-if="message">{{message}}</div>
+        <b-button class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
+      </div>
     </b-card>
     </div>
   </div>
@@ -49,6 +49,11 @@ export default {
   },
   created(){
     this.setDefaultStyle();
+  },
+  computed: {
+    points(){
+      return this.$parent.result.points;
+    }
   },
   methods: {
     select(oSelected){
