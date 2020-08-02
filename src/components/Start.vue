@@ -36,6 +36,8 @@ export default {
   methods: {
     play(){
       this.$parent.started = true;
+      this.$parent.setRandomContext();
+      this.$parent.prepareFirstQuestion();
     }
   }
 }
