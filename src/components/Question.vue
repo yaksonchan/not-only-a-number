@@ -3,9 +3,10 @@
     <div>
       <b-card
       :title="'Fase Atual ' + question.sequence"
-      img-src="https://picsum.photos/600/300/?image=25"
+      :img-src="require('@/assets/' + question.img)"
       img-alt="Image"
       img-top
+      img-height="200"
       tag="article"
       class="mb-2 questionContent"
     >
@@ -25,11 +26,11 @@
           </b-row>
         </div>
       </b-card-text>
-    <div v-if="answered">
-      <div v-if="message">{{message}}</div>
-      <b-button href="#" class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
-    </div>
-    
+      <div v-if="answered">
+        <div class="points">Sua pontuação atual é: {{points}}</div>
+        <div v-if="message">{{message}}</div>
+        <b-button href="#" class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
+      </div>
     </b-card>
     </div>
   </div>
@@ -48,6 +49,11 @@ export default {
   },
   created(){
     this.setDefaultStyle();
+  },
+  computed: {
+    points(){
+      return this.$parent.result.points;
+    }
   },
   methods: {
     select(oSelected){

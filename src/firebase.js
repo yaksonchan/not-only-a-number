@@ -1,4 +1,5 @@
-import { initializeApp } from 'firebase';
+import { initializeApp } from 'firebase/app';
+import 'firebase/database'
 
 // Your web app's Firebase configuration
 const app = initializeApp({
