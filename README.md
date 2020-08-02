@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # not-only-a-number
 
 ## Project setup
@@ -23,6 +22,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# not-only-a-number
->>>>>>> 5b60ddc1e3ef7169cb4f5dceda35d70cee154f63
