@@ -2,7 +2,7 @@
   <div class="question">
     <div>
       <b-card
-      :title="'Fase Atual ' + question.sequence"
+      :title="'Passo ' + question.sequence"
       :img-src="require('@/assets/' + question.img)"
       img-alt="Image"
       img-top
@@ -18,8 +18,8 @@
           <b-row class="d-flex justify-content-md-center">
             <b-col cols="12" md="auto">
               <b-form-group>
-                <b-row v-for="o in question.options" :key="o.id" align-h="center">
-                    <b-button class="option" :variant="o.style" @click="select(o)" :disabled="answered">{{o.text}}</b-button>
+                <b-row align-h="center" v-for="o in question.options" :key="o.id">
+                  <b-button class="option" :variant="o.style" @click="select(o)" :disabled="answered">{{o.text}}</b-button>
                 </b-row>
               </b-form-group>
             </b-col>
@@ -27,9 +27,17 @@
         </div>
       </b-card-text>
       <div v-if="answered">
-        <div class="points">Sua pontuação atual é: {{points}}</div>
-        <div v-if="message">{{message}}</div>
-        <b-button class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
+        <template>
+          <div>
+            <b-alert variant="danger" show>
+              <p>Sua pontuação atual é: {{points}}</p>
+              <br v-if="message">
+              {{message}}
+            </b-alert>
+          </div>
+        </template>
+        
+        <b-button href="#" class="option" variant="dark" @click="nextStep()">Próximo passo</b-button>
       </div>
     </b-card>
     </div>
@@ -74,6 +82,12 @@ export default {
       this.question.options = this.question.options.map(o => ({...o, style: 'outline-dark'}));
     },
     nextStep(){
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+
       this.$parent.nextQuestion();
     },
     redefineAttributes(){
@@ -108,10 +122,43 @@ img {
   align-content: center;
 }
 
+.card-title {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.card-text {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: justify;
+  color: #323279;
+  font-size: 17pt;
+  font-weight: bolder;
+}
+
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.alert {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: justify;
+  font-size: 16pt;
+}
+
+.alert p {
+  color:#4C4C7C;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-size: 18pt;
+}
+
 .option {
   width: 250px;
   margin-top: 5px;
   border-radius: 16px;
+  
 }
 
 </style>

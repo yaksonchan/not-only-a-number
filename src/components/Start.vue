@@ -2,7 +2,7 @@
   <div class="start">
     <div>
       <b-card
-      title="Como jogar"
+      title="Objetivo"
       tag="article"
       class="mb-2 card"
       >
