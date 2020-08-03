@@ -73,7 +73,14 @@ export default {
   name: 'Statistics',
   data(){
       return {
-          result: null,
+          result: {
+              country:"Brazil",
+              cases:551438,
+              confirmed:2707877,
+              deaths:93563,
+              recovered:2062876,
+              updated_at:"2020-08-03T00:34:38.000Z"
+          },
           namesFirst: [
               "João Carlos Fachinello", "Rosa Campagnolo Vaccaro", "Marcelo Rubens Gonçalves", 
               "Sebastião Bueno da Silva", "Maurício Borges Marques", "Gerônimo Batista Pires", 
