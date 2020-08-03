@@ -8,9 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;900&family=Kanit:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta property="og:url"           content="https://not-only-a-number.herokuapp.com/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Not Only a Number" />
+    <meta property="og:description"   content="Jogue agora mesmo o quiz que pode salvar vidas!" />
+    <title>Not Only a Number!</title>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0" nonce="LWhW8jxM"></script>
     <noscript>
       <strong>O <%= htmlWebpackPlugin.options.title %> não funciona sem o JavaScript ativado. Por favor, ative-o para continuar.</strong>
     </noscript>

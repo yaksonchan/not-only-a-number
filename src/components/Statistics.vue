@@ -63,6 +63,7 @@
             </marquee>
           </div>
       </div>
+      <div style="text-align: center; color:white;">Fonte: WHO.</div>
   </div>
 </template>
 
@@ -111,6 +112,11 @@ export default {
         font-family: 'Josefin Sans', sans-serif;
     }
 
+    .stats {
+        color: #4C4C7C;
+        font-size: 25px;
+    }
+
     .marqueeBg {
         position:relative;
         top:-50px;
@@ -123,11 +129,6 @@ export default {
 
     .icon:hover {
         margin-top: -10px;
-    }
-
-    .stats {
-        color: #4C4C7C;
-        font-size: 25px;
     }
 
     .container-group {

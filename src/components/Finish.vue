@@ -7,15 +7,17 @@
       class="mb-2 card"
     >
       <b-card-text>
-        <h2>Sua pontuação foi de: {{result.points}}</h2>
+        <h2>Sua pontuação foi de: {{result.points}}/{{totalPoints}} ({{resultPercent.toFixed(2)}}%)</h2>
         <br>
         <typical
           class="vt-subTitle"
           :steps="['Agora é só aplicar as respostas que acertou na vida real e cuidar para que não cometa os erros obtidos neste jogo em seu dia a dia. Não temos um Jogar Novamente em nossa vida!', 500]"
           :wrapper="'p'"
         ></typical>
+        <div data-href="https://not-only-a-number.herokuapp.com/">
+        <b-button target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnot-only-a-number.herokuapp.com%2F&amp;src=sdkpreparse" class="fb-share-button">Compartilhar no Facebook</b-button></div>
       </b-card-text>
-      <b-button href="#" variant="primary" @click="playAgain()">Jogar novamente</b-button>
+      <b-button class="btn" href="#" variant="primary" @click="playAgain()">Jogar novamente</b-button>
     </b-card>
     </div>
   </div>
@@ -29,9 +31,17 @@ export default {
   components: {
     typical
   },
-  props: ['result'],
+  props: ['result', 'context'],
   data(){
     return {
+    }
+  },
+  computed: {
+    totalPoints(){
+      return 10 * this.context.questions.length;
+    },
+    resultPercent(){
+      return this.result.points/this.totalPoints * 100;
     }
   },
   methods: {
@@ -43,7 +53,6 @@ export default {
 </script>
 
 <style scoped>
-
 .card {
   max-width: 30rem;
   border-radius: 16px;

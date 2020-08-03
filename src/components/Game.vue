@@ -10,7 +10,7 @@
       >
         <Question :question="currentQuestion" v-if="started && !finished" :key="currentQuestion.sequence"/>
       </transition>
-      <Finish :result="result" v-if="finished"/>
+      <Finish :result="result" :context="currentContext" v-if="finished"/>
   </div>
 </template>
 
