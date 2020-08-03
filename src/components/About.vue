@@ -8,7 +8,11 @@
                 </b-col>
             </b-row>
         </div>
-    <p>O <span>N</span>ot <span>O</span>nly <span>a</span> <span>N</span>umber é um quiz com intuito de conscientizar o usuário. As perguntas simulam situações pertinentes e comuns do dia a dia, ocorrendo na pele de nosso personagem <span>Noan</span>. Responda cada pergunta subsequente e aumente de nível a cada acerto. Em caso de erro, será explicado a conduta certa para o usuário com finalidade educativa. Na seção acima, são exibidas as estatísticas atualizadas da contaminação por COVID-19, assim como os nomes de diversas Pessoas que perdemos por causa da doença. Ao fim do Quiz, seus resultados serão computados com o percentual do quanto você é capaz de evitar o aumento do contágio, relacionado às situações presentes no jogo.</p>
+    <p>O <span>N</span>ot <span>O</span>nly <span>a</span> <span>N</span>umber é um quiz com intuito de conscientizar o usuário. As perguntas simulam situações
+     pertinentes e comuns do dia a dia, ocorrendo na pele de nosso personagem <span>Noan</span>. 
+     Responda cada pergunta subsequente e aumente de nível a cada acerto. Em caso de erro, será explicado a conduta
+      certa para o usuário com finalidade educativa. Na seção acima, são exibidas as estatísticas atualizadas da 
+      contaminação por COVID-19, assim como os nomes de diversas pessoas que perdemos por causa da doença.</p>
   </div>
 </template>
 

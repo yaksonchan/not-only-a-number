@@ -1,0 +1,125 @@
+{
+  "contexts" : [ {
+    "id" : 1,
+    "questions" : [ {
+      "answer" : 2,
+      "img" : "q1.jpg",
+      "options" : [ {
+        "text" : "Pedir delivery de comida em casa.",
+        "value" : 1,
+        "whyNot" : "Mesmo que o delivery seja uma opção um pouco mais segura e restaurantes que evitem aglomerações reduzam o risco de contaminação, é sempre mais seguro cozinhar a própria comida em casa."
+      }, {
+        "text" : "Cozinhar a própria comida.",
+        "value" : 2
+      }, {
+        "text" : "Ir para um restaurante respeitando o isolamento social.",
+        "value" : 3,
+        "whyNot" : "Mesmo que o delivery seja uma opção um pouco mais segura e restaurantes que evitem aglomerações reduzam o risco de contaminação, é sempre mais seguro cozinhar a própria comida em casa."
+      } ],
+      "question" : "Noan acordou de manhã com fome. Qual opção mais segura para ele se alimentar?",
+      "sequence" : 1
+    }, {
+      "answer" : 1,
+      "img" : "q2.jpg",
+      "options" : [ {
+        "text" : "Colocar a máscara, pegar o álcool gel e sair.",
+        "value" : 1
+      }, {
+        "text" : "Sair normalmente para tomar seu café.",
+        "value" : 2,
+        "whyNot" : "A máscara reduz a chance, principalmente dos assintomáticos, de contaminarem outras pessoas. O álcool gel é necessário para higienizar as mãos."
+      }, {
+        "text" : "Pegar a máscara e sair de casa.",
+        "value" : 3,
+        "whyNot" : "A máscara reduz a chance, principalmente dos assintomáticos, de contaminarem outras pessoas. O álcool gel é necessário para higienizar as mãos."
+      } ],
+      "question" : "Noan precisa sair de casa para tomar seu café da manhã, pois não há o que comer em casa. Noan está prestes a sair, o que ele deve fazer?",
+      "sequence" : 2
+    }, {
+      "answer" : 3,
+      "img" : "q3.jpg",
+      "options" : [ {
+        "text" : "Ônibus, metrô e barcas.",
+        "value" : 1,
+        "whyNot" : " Ônibus, metrô e barcas são meios de transporte que precisam ser evitados, visto que aglomeram muitas pessoas e possuem grande rotatividade. Uber pode ser uma solução, caso esteja devidamente adaptado. Entretanto bicicleta, veículo pessoal e ir a pé são as possibilidades de menor risco."
+      }, {
+        "text" : "Metrô, Uber e bicicleta.",
+        "value" : 2,
+        "whyNot" : "Ônibus, metrô e barcas são meios de transporte que precisam ser evitados, visto que aglomeram muitas pessoas e possuem grande rotatividade. Uber pode ser uma solução, caso esteja devidamente adaptado. Entretanto bicicleta, veículo pessoal e ir a pé são as possibilidades de menor risco."
+      }, {
+        "text" : "Bicicleta, veículo pessoal e a pé.",
+        "value" : 3
+      } ],
+      "question" : "Noan precisa utilizar algum meio de transporte para se deslocar até a padaria. Quais são os meios de transporte mais seguros?",
+      "sequence" : 3
+    }, {
+      "answer" : 2,
+      "img" : "q4.jpg",
+      "options" : [ {
+        "text" : "0,5m.",
+        "value" : 1,
+        "whyNot" : "Segundo recomendações da OMS, uma distância entre 1,5m e 2,0m é razoável para evitar contaminação."
+      }, {
+        "text" : "Entre 1,5 e 2,0m.",
+        "value" : 2
+      }, {
+        "text" : "Entre 5,0 e 6,0 metros",
+        "value" : 3,
+        "whyNot" : "Segundo recomendações da OMS, uma distância entre 1,5m e 2,0m é razoável para evitar contaminação."
+      } ],
+      "question" : "Às vezes, é realmente inevitável ter que sair na rua a pé. Qual a distância mínima razoável de isolamento social que o Noan tem que manter?",
+      "sequence" : 4
+    }, {
+      "answer" : 3,
+      "img" : "q5.jpg",
+      "options" : [ {
+        "text" : "Encostar a mão somente no necessário, evitando ao máximo o contato físico com o ambiente e pessoas.",
+        "value" : 1,
+        "whyNot" : "Não seja histérico. É natural termos que, por necessidade e responsabilidade, interagir fisicamente com alguns objetos. Tenha consciência de evitar coçar o nariz e o olho. Use álcool gel para higienização."
+      }, {
+        "text" : "Aceitar que o contato físico é inevitável, agir naturalmente e seguir a vida cotidiana.",
+        "value" : 2,
+        "whyNot" : "Não seja histérico. É natural termos que, por necessidade e responsabilidade, interagir fisicamente com alguns objetos. Tenha consciência de evitar coçar o nariz e o olho. Use álcool gel para higienização."
+      }, {
+        "text" : "Aceitar que certo nível de contato físico é inevitável, porém com responsabilidade evitar contatos desnecessários e utilizar álcool gel para higienização. Não coçar nariz e olho.",
+        "value" : 3
+      } ],
+      "question" : "Noan chegou à padaria. Naturalmente, é inevitável encostar a mão e algumas coisas: embalagens de alimentos, máquina de passar o cartão, abrir uma porta, receber o troco do caixa. Assumindo que algum desses elementos pode estar contaminado com COVID-19, qual postura ele deve tomar?",
+      "sequence" : 5
+    }, {
+      "answer" : 3,
+      "img" : "q6.jpg",
+      "options" : [ {
+        "text" : "Academia, farmácia e cinema.",
+        "value" : 1,
+        "whyNot" : "Apesar de academia ter sido decretado pelo Presidente da República como atividade essencial, cinema e consertos musicais não o são. Pet shops, veterinários, supermercados e farmácias são uns dos serviços essenciais."
+      }, {
+        "text" : "Supermercado, pet shop e concertos musicais.",
+        "value" : 2,
+        "whynot" : "Apesar de academia ter sido decretado pelo Presidente da República como atividade essencial, cinema e consertos musicais não o são. Pet shops, veterinários, supermercados e farmácias são uns dos serviços essenciais."
+      }, {
+        "text" : "Farmácia, supermercado e veterinário.",
+        "value" : 3
+      } ],
+      "question" : "Ao voltar para casa, Noan repara que a maioria das lojas e serviços estão fechados. Isso ocorre pois os serviços essenciais são, por exemplo:",
+      "sequence" : 6
+    }, {
+      "answer" : 1,
+      "img" : "q7.jpg",
+      "options" : [ {
+        "text" : "Lavar as mãos com água e sabão, e higienizar ou descartar a máscara utilizada.",
+        "value" : 1
+      }, {
+        "text" : "Lavar as mãos com água e sabão.",
+        "value" : 2,
+        "whyNot" : "É sempre recomendado lavar bem as mãos quando chegar em casa, mesmo seguindo as normas de isolamento social. Higienizar ou descartar a máscara é fundamental, pois ela pode estar contaminada."
+      }, {
+        "text" : "Não há necessidade de lavar as mãos, visto que na rua Noan fez todas recomendações do isolamento social.",
+        "value" : 3,
+        "whyNot" : "É sempre recomendado lavar bem as mãos quando chegar em casa, mesmo seguindo as normas de isolamento social. Higienizar ou descartar a máscara é fundamental, pois ela pode estar contaminada."
+      } ],
+      "question" : "Noan chegou em casa, são e salvo pois tomou todas as recomendações para reduzir o contágio do COVID-19. O que Noan deve fazer?",
+      "sequence" : 7
+    } ]
+  } ]
+}

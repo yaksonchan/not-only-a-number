@@ -63,6 +63,7 @@
             </marquee>
           </div>
       </div>
+      <div style="text-align: center; color:white;">Fonte: WHO.</div>
   </div>
 </template>
 

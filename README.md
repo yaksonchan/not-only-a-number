@@ -20,4 +20,5 @@ npm install
 ```
 npm run serve
 ```
-
+### Observações
+O aplicativo já tem uma conexão ao Firebase estabelecida, se essa conexão falhar por algum motivo é necessário injetar as Questions e os Contexts utilizando o arquivo '/firebaseDatabase.json'.
