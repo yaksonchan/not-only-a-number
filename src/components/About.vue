@@ -20,7 +20,7 @@ export default {
 
 <style>
 
-#about {
+#about { /* id em ../views/home.vue */
   background-color: #4C4C7C;
 }
 

@@ -15,7 +15,7 @@
           :wrapper="'p'"
         ></typical>
       </b-card-text>
-      <b-button href="#" variant="primary" @click="playAgain()">Jogar novamente</b-button>
+      <b-button class="btn" href="#" variant="primary" @click="playAgain()">Jogar novamente</b-button>
     </b-card>
     </div>
   </div>

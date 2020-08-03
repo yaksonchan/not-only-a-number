@@ -144,6 +144,7 @@ img {
 .alertContent {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16pt;
+  border-radius: 16px;
 }
 
 .alertContent p {
